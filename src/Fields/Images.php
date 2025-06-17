@@ -4,7 +4,7 @@ namespace Ebess\AdvancedNovaMediaLibrary\Fields;
 
 class Images extends Media
 {
-    protected $defaultValidatorRules = ['image'];
+    protected $defaultValidatorRules = ['image:allow_svg'];
 
     public function __construct($name, $attribute = null, callable $resolveCallback = null)
     {
